@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker</title>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/detail.css">
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- This is for navigation bar -->
+    <nav>
+        <img src="/assets/images/logo.png" class="logo-img" alt="Logo">
+        <h1 class="d-inline title" id="main-title">CryptoTracker</h1>
+        <button class="f-right nav-button" id="nav-search-button">Search</button>
+    </nav>
+
+    <!-- This is the description section -->
+    <section class="flex-container">
+        <img src="/assets/images/logo.png" id="coin-logo" alt="coin logo" class=" main-img">
+        <div class="main-content">
+            <h1 class="mb-1 color-blue" id="coin-name">....</h1>
+
+            <div class="flex-container space-around mb-1">
+                <p>₹ <span id="inr-price">...</span></p>
+                <p>$ <span id="usd-price">...</span></p>
+                <p>€ <span id="eur-price">...</span></p>
+                <p>£ <span id="gbp-price">...</span></p>
+            </div>
+
+            <p><b>Discription:</b></p>
+            <p id="coin-description">.....</p>
+        </div>
+    </section>
+
+    <!-- This is the price chart section -->
+    <section class="ml-5 mr-5 price-chart-section">
+        <h1 class="color-blue mb-1">Price History</h1>
+        <div>
+            <canvas id="myChart" width="100" height="25"></canvas>
+          </div>
+    </section>
+
+     <!-- This is for the footer -->
+     <footer>
+        <p class="foot-para mt-1">&copy; CryptoTracker | Devloped by ................</p>
+    </footer>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/detail.js"></script>
+</body>
+</html>
