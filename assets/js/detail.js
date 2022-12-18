@@ -6,7 +6,7 @@ function loadDetail() {
   const params = new URLSearchParams(url_obj.search);
 
   if (!params.has("id")) {
-    window.location.href = "/";
+    window.location.href = "./index.html";
   }
 
   fetch(
